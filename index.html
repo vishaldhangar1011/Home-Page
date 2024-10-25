@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container bg-gray-900 text-white">
+        <!-- header section -->
+        <header class="navbar_section">
+            <nav class="border-gray-200 dark:bg-gray-900 dark:border-gray-700" role="navigation">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="./images/logo.png" class="h-8" alt="logo" />
+                    </a>
+                    <button id="navbar-toggle" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+
+                        <svg id="menu-icon" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                        <svg id="close-icon" class="w-5 h-5 hidden" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 6l8 8m0-8l-8 8" />
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                        <ul
+                            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-900 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-blue-400  md:p-0 md:dark:text-blue-500"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Loans</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                                    us</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Hero section -->
+        <section
+            class="flex flex-col md:flex-row items-center justify-between container mx-auto px-4 py-16 text-white bg-cover bg-center"
+            style="background-image: url('./images/hero.png');">
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <img src="./images/hero-1.png" alt="Hero" class="w-3/4 h-auto rounded shadow-lg mx-auto" />
+            </div>
+
+            <div class="md:w-1/2">
+                <form class="bg-transparent text-white p-14 rounded-lg shadow-md">
+                    <div class="mb-4 flex flex-col md:flex-row md:space-x-4">
+                        <div class="flex-1">
+                            <input type="text" class="mt-1 p-4 border border-[#02C4A6]rounded-md w-full bg-transparent"
+                                placeholder="First Name" />
+                        </div>
+                        <div class="flex-1">
+                            <input type="text"
+                                class="mt-1 p-4 border border-inputColor rounded-md w-full bg-transparent"
+                                placeholder="Last Name" />
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <input type="email" class="mt-1 p-4 border border-inputColor rounded-md w-full bg-transparent"
+                            placeholder="Email" />
+                    </div>
+
+                    <div class="flex justify-between items-center p-2 text-white rounded-md">
+                        <div class="flex justify-between items-center gap-7">
+                            <p class="text-sm font-medium">Loan Amount</p>
+                            <span class="text-base text-white">($100-$35,000)*</span>
+                        </div>
+                        <p class="text-3xl font-bold">$560</p>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="relative pt-1">
+                            <div class="flex items-center justify-between">
+                                <div class="flex-1 bg-white rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full w-1/2"></div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-1 left-1/2 transform -translate-x-1/2">
+                                <div class="h-6 w-6 bg-white rounded-full border-2 border-blue-500 shadow-md"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox"
+                                class="form-checkbox h-5 w-5 text-gray-900 appearance-none border border-gray-400 rounded checked:bg-white checked:border-transparent"
+                                onchange="this.nextElementSibling.classList.toggle('hidden', !this.checked);" />
+                            <span class="relative ml-2 font-montserrat text-base text-white">
+                                You agree to our Privacy Policy & Terms, E-consent
+                                <span
+                                    class="absolute left-0 top-0 w-full h-full flex items-center justify-center text-white transition-opacity duration-200 hidden">
+                                    ✔
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <button type="submit"
+                        class="w-44 font-mbg-transparent border-2 border-borderColor text-white py-2 rounded-full hover:bg-borderColor transition duration-200">
+                        Get Started
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Working Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between container mx-auto px-4 py-16">
+            <!-- left structure -->
+            <div class="md:w-1/2 mb-8 md:mb-2">
+                <h1 class="text-6xl font-playfair mb-8">How does it work?</h1>
+                <h3 class="text-3xl font-montserrat mb-8">Your Guide to Getting a Loan</h3>
+                <div class="flex-grow border-t border-white mr-2 mb-8 w-1/2"></div>
+                <p class="text-lg mb-8 font-montserrat">
+                    Welcome to Website name, where securing the financial assistance you
+                    need is simpler than ever. Whether you're looking to fund a new
+                    project, consolidate debt, or cover unexpected expenses, our
+                    streamlined process ensures quick and hassle-free access to the
+                    funds you require. Here's how it works:
+                </p>
+                <button type="submit"
+                    class="w-44 bg-accent border-2 border-borderColor text-white font-montserrat py-2 rounded-full transition duration-200">
+                    Get Started
+                </button>
+            </div>
+
+            <!-- Right Side structure -->
+            <div class="md:w-1/2 flex flex-wrap justify-between">
+                <div class="w-1/2 p-2">
+                    <img src="./images/form1.png" alt="form1" class="w-full h-auto rounded-lg shadow-lg mb-4" />
+                </div>
+                <div class="w-1/2 p-2">
+                    <img src="./images/form2.png" alt="form2" class="w-full h-auto rounded-lg shadow-lg mb-4" />
+                </div>
+                <div class="w-1/2 p-2">
+                    <img src="./images/form3.png" alt="form3" class="w-full h-auto rounded-lg shadow-lg mb-4" />
+                </div>
+                <div class="w-1/2 p-2">
+                    <img src="./images/form4.png" alt="form4" class="w-full h-auto rounded-lg shadow-lg" />
+                </div>
+            </div>
+        </section>
+
+        <!--Choose US section -->
+        <section class="py-12">
+            <div class="container mx-auto flex flex-col lg:flex-row items-center">
+                <!-- Heading -->
+                <div class="flex-1 mb-6 lg:mb-0">
+                    <h3 class="text-3xl text-center font-playfair text-white">Why People</h3>
+                    <h1 class="mt-10 text-5xl mb-6 text-center font-playfair text-white">Choose Us</h1>
+                    <div class="flex justify-center mb-8">
+                        <div class="border-t border-white w-1/2"></div>
+                    </div>
+                </div>
+
+
+                <div class="flex-1 mb-6 lg:mb-0">
+                    <img src="./images/whychooseus.png" alt="Service Image" class="w-full rounded-lg shadow-md" />
+                </div>
+
+
+                <div class="flex-1">
+                    <ul class="mt-4 list-disc list-inside text-gray-600">
+                        <li class="flex items-center mb-4">
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center mr-4 overflow-hidden">
+                                <img src="./images/Subtract.png" alt="Logo" class="w-10 h-10 opacity-75">
+
+                            </div>
+
+
+                            <div class="flex-grow">
+                                <h3 class="text-xl font-playfair text-white">Lender approval is simple</h3>
+                                <p class="text-white font-montserrat">We’ve designed our process tobe quick, easy, and
+                                    efficient
+                                </p>
+                                <div class="flex justify-start mt-2">
+                                    <div class="border-t border-white w-1/2"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center mr-4">
+                                <img src="./images/Subtract.png" alt="Logo" class="rounded-full w-10 h-10">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-xl font-playfair text-white">In-cash your credit quickly</h3>
+                                <p class="text-white font-montserrat">No origination fees or pre-payment.What you see
+                                    is what you get.
+                                </p>
+                                <div class="flex justify-start mt-2">
+                                    <div class="border-t border-white w-1/2"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center mr-4">
+                                <img src="./images/Subtract.png" alt="Logo" class="rounded-full w-10 h-10">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-xl font-playfair text-white">Preserve your time</h3>
+                                <p class="text-white font-montserrat">Simple online form and access to
+                                    live support 24/7.
+                                </p>
+                                <div class="flex justify-start mt-2">
+                                    <div class="border-t border-white w-1/2"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center mr-4">
+                                <img src="./images/Subtract.png" alt="Logo" class="rounded-full w-10 h-10">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-xl font-playfair text-white">No hidden charges</h3>
+                                <p class="text-white font-montserrat">Complete our online form. It’s quick,easy, and
+                                    confidential
+                                </p>
+                                <div class="flex justify-start mt-2">
+                                    <div class="border-t border-white w-1/2"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Explore section -->
+        <section class="p-6 bg-gray-900 flex flex-col items-center text-center">
+            <h1 class="text-2xl text-white mb-6 font-playfair">Explore your</h1>
+            <h3 class="text-6xl  mb-6 font-playfair" style="color: #02C4A6;">Financial Desire</h3>
+            <h3 class="text-2xl text-white mb-6 font-playfair">With Us</h3>
+            <h4 class="text-3xl text-white mb-5 font-playfair">Unlock your personal loan today</h4>
+            <div class="flex-grow border-t border-white mr-2 mb-10 w-52"></div>
+            <p class="text-white mb-12 text-base leading-7">
+                You register online from your home computer or any mobile device. Because the process occurs in
+                real-time, it’s very fast. We’ve been connecting consumers with lenders for over 15 years; helping
+                people of most credit situations locate the suitable loans for their needs. As a result, we have
+                developed a reputation with both lenders and consumers as providing a reputable, trustworthy service. We
+                build unique relationships with a network of dependable loan providers in the loan industry while
+                building much of our business via referrals from applicants. Check out your Loan option by completing
+                the online form in a few steps.
+            </p>
+            <button type="submit"
+                class="w-44 bg-accent border-2 border-borderColor text-white font-montserrat py-2 rounded-full transition duration-200">
+                Get Started
+            </button>
+        </section>
+        <!-- footer -->
+        <footer class="bg-gray-700 text-white p-6 mt-20">
+            <div class="flex flex-row items-start mt-7 mb-8"> <!-- Added mb-8 for bottom margin -->
+                <!-- Left Section -->
+                <div class="flex flex-col items-center mb-12 w-1/2">
+                    <img src="./images/logo.png" alt="Logo" class="mb-8 w-24 h-auto" /> <!-- Decreased width -->
+                    <p class="text-center max-w-xs">We help to complete your financial desire<br />by a few steps of the
+                        form.</p> <!-- Adjusted for two lines -->
+                </div>
+
+                <!-- Right Section -->
+                <div class="grid grid-cols-3 gap-4 w-1/2">
+                    <div class="flex flex-col">
+                        <h4 class="font-bold mb-4">COMPANY</h4>
+                        <hr class="border-white border-t-2 mb-4" />
+                        <p>Who We Are<br />
+                            Blog<br />
+                            Rates & Fees<br />
+                            Credit Score<br />
+                            Credit Repair<br />
+                            E Consent</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="font-bold mb-4">IMPORTANT</h4>
+                        <hr class="border-white border-t-2 mb-4" />
+                        <p>How It Works<br />
+                            About Us<br />
+                            Unsubscribe<br />
+                            Update Preferences<br />
+                            Advertiser Disclosure<br />
+                            CCPA</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="font-bold mb-4">PRODUCTS</h4>
+                        <hr class="border-white border-t-2 mb-4" />
+                        <p>Payday Loans<br />
+                            Installment Loan<br />
+                            Personal Loan</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="text-center">
+                <hr class="border-white mb-1 mt-10" />
+                <p class="text-sm mt-6 p-0"> <!-- Changed p-1 to p-0 for no padding -->
+                    We are not an offer or solicitation to lend. The website only provides a service and is not an
+                    agent, representative, or broker of any lender and does not endorse or charge you for any loan
+                    or product. The website operators are not lenders, do not make loans of any type, and do not
+                    make credit decisions. The website collects personal information provided by you and forwards it
+                    to partners in our lender network and third-party networks of lenders. You are under no
+                    obligation to use this website or service to initiate, contact, nor apply for credit or any loan
+                    product with any service provider or lender. Loan amounts vary from $100 to $50,000 but not all
+                    lenders can provide up to $35,000. Providing your information on the website does not guarantee
+                    you will be approved for a loan or credit product. Cash transfer times may vary between lenders
+                    and may depend on your individual financial institution. In some circumstances, faxing may be
+                    required. Any of the above-referenced suggestions are based on industry best practices and
+                    should be used for informational purposes only and not construed as legal advice. You should
+                    contact your attorne
+
+            </div>
+        </footer>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
