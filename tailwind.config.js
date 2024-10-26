@@ -8,12 +8,11 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
-        customLightGray: '#E8E9EE', //
+        customLightGray: '#E8E9EE',
         customGray: '#1B1B1E',
-        customGreen: '#02C4A6', //for button border
+        customGreen: '#02C4A6',
         customBlue: '#0197DA',
-        customGradient: 'linear-gradient(90deg, #0096DB 0%, #02C4A5 100%)' //for buttons, input gradient
-        
+          
       },
       
     },

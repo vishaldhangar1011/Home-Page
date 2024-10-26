@@ -65,14 +65,14 @@
                 <img src="./images/hero-1.png" alt="Hero" class="w-3/4 h-auto rounded shadow-lg mx-auto" />
             </div>
             <div class="md:w-1/2">
-                <form class="bg-transparent text-white p-14 rounded-lg shadow-md">
+                <form class="bg-transparent text-white p-6 sm:p-8 md:p-10 lg:p-14 rounded-lg shadow-md">
                     <div class="mb-4 flex flex-col md:flex-row md:space-x-4">
-                        <div class="flex-1">
+                        <div class="flex-1 mb-2 md:mb-0">
                             <input type="text"
                                 class="mt-1 p-4 border border-customGreen rounded-md w-full bg-transparent text-customLightGray font-montserrat"
                                 placeholder="First Name" />
                         </div>
-                        <div class="flex-1">
+                        <div class="flex-1 mb-2 md:mb-0">
                             <input type="text"
                                 class="mt-1 p-4 border border-customGreen rounded-md w-full bg-transparent text-customLightGray font-montserrat"
                                 placeholder="Last Name" />
@@ -88,36 +88,38 @@
                             <p class="text-sm text-customLightGray font-montserrat">Loan Amount</p>
                             <span class="text-base text-customLightGray font-montserrat">($100-$35,000)*</span>
                         </div>
-                        <p class="text-3xl text-customLightGray font-montserrat">$560</p>
+                        <p id="loanAmount" class="text-3xl text-customLightGray font-montserrat">$560</p>
                     </div>
+
                     <div class="mb-6">
                         <div class="relative pt-1">
-                            <div class="flex items-center justify-between">
-                                <div class="flex-1 bg-customLightGray rounded-full h-2">
-                                    <div class="bg-customGreen h-2 rounded-full w-1/2"></div>
-                                </div>
+                            <div class="flex-1 bg-gray-300 rounded-full h-2">
+                                <div id="progressBar" class="bg-customGreen h-2 rounded-full" style="width: 1%;"></div>
                             </div>
-                            <div class="absolute -top-1 left-1/2 transform -translate-x-1/2">
-                                <div
-                                    class="h-6 w-6 bg-customLightGray rounded-full border-2 border-customGreen shadow-md">
-                                </div>
-                            </div>
+                            <input type="range" id="loanRange" min="100" max="35000" step="100" value="560"
+                                class="absolute top-0 left-0 w-full h-3 appearance-none bg-transparent">
                         </div>
                     </div>
                     <div class="mb-4">
                         <label class="inline-flex items-center cursor-pointer">
                             <input type="checkbox"
-                                class="form-checkbox h-5 w-5 text-gray-900 appearance-none border border-customLightGray rounded checked:bg-customLightGray checked:border-transparent"
+                                class="form-checkbox h-5 w-5 text-gray-900 appearance-none border border-customLightGray rounded checked:bg-customLightGray checked:border-transparent peer"
                                 onchange="toggleTerms(this)" />
-                            <span class="relative ml-2 font-montserrat text-sm text-white">You agree to our Privacy
-                                Policy & Terms, E-consent<span
-                                    class="absolute left-0 top-0 w-full h-full flex items-center justify-center text-customLightGray transition-opacity duration-200 checkmark hidden">✔</span></span>
+                            <span class="relative ml-2 font-montserrat text-sm text-white">
+                                You agree to our Privacy Policy & Terms, E-consent
+                                <span
+                                    class="absolute left-0 top-0 w-full h-full flex items-center justify-center text-customLightGray transition-opacity duration-200 checkmark opacity-0 peer-checked:opacity-100">
+                                    ✔
+                                </span>
+                            </span>
                         </label>
+
                     </div>
                     <button type="submit"
                         class="w-44 font-montserrat border-2 border-customGreen text-white py-2 rounded-full hover:bg-customGreen transition duration-200">Get
                         Started</button>
                 </form>
+
             </div>
         </section>
 
@@ -179,66 +181,51 @@
 
                 <div class="flex-1">
                     <ul class="mt-6 list-disc list-inside text-gray-600">
-                        <li class="flex items-center mb-4">
+                        <li class="flex items-start mb-4">
                             <div class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center mr-4">
                                 <img src="./images/Subtract.png" alt="Logo" class="w-10 h-10 opacity-75">
                             </div>
-                            <div class="flex-grow flex items-center"> <!-- Changed to items-center -->
-                                <div class="flex flex-col">
-                                    <h3 class="text-xl font-playfair text-customLightGray">Lender approval is simple
-                                    </h3>
-                                    <p class="text-customLightGray font-montserrat">We’ve designed our process to be
-                                        quick, easy, and efficient</p>
-                                </div>
-                                <div class="flex justify-start mt-2">
-                                    <div class="border-t border-white w-1/2"></div>
-                                </div>
+                            <div class="flex-grow flex flex-col">
+                                <h3 class="text-xl font-playfair text-customLightGray">Lender approval is simple</h3>
+                                <p class="text-customLightGray font-montserrat">We’ve designed our process to be quick, easy, and efficient.</p>
+                                <div class="border-t border-white w-1/2 mt-2"></div>
                             </div>
                         </li>
-
-                        <li class="flex items-center mb-4">
+                    
+                        <li class="flex items-start mb-4">
                             <div class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center mr-4">
-                                <img src="./images/Subtract.png" alt="Logo" class="rounded-full w-10 h-10">
+                                <img src="./images/Subtract.png" alt="Logo" class="w-10 h-10 rounded-full">
                             </div>
-                            <div class="flex-grow flex flex-col justify-center">
+                            <div class="flex-grow flex flex-col">
                                 <h3 class="text-xl font-playfair text-white">In-cash your credit quickly</h3>
-                                <p class="text-white font-montserrat">No origination fees or pre-payment. What you see
-                                    is what you get.</p>
-                                <div class="flex justify-start mt-2">
-                                    <div class="border-t border-white w-1/2"></div>
-                                </div>
+                                <p class="text-white font-montserrat">No origination fees or pre-payment. What you see is what you get.</p>
+                                <div class="border-t border-white w-1/2 mt-2"></div>
                             </div>
                         </li>
-
-                        <li class="flex items-center mb-4">
+                    
+                        <li class="flex items-start mb-4">
                             <div class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center mr-4">
-                                <img src="./images/Subtract.png" alt="Logo" class="rounded-full w-10 h-10">
+                                <img src="./images/Subtract.png" alt="Logo" class="w-10 h-10 rounded-full">
                             </div>
-                            <div class="flex-grow flex flex-col justify-center">
+                            <div class="flex-grow flex flex-col">
                                 <h3 class="text-xl font-playfair text-white">Preserve your time</h3>
-                                <p class="text-white font-montserrat">Simple online form and access to live support
-                                    24/7.</p>
-                                <div class="flex justify-start mt-2">
-                                    <div class="border-t border-white w-1/2"></div>
-                                </div>
+                                <p class="text-white font-montserrat">Simple online form and access to live support 24/7.</p>
+                                <div class="border-t border-white w-1/2 mt-2"></div>
                             </div>
                         </li>
-
-                        <li class="flex items-center mb-4">
+                    
+                        <li class="flex items-start mb-4">
                             <div class="w-12 h-12 rounded-full bg-transparent flex items-center justify-center mr-4">
-                                <img src="./images/Subtract.png" alt="Logo" class="rounded-full w-10 h-10">
+                                <img src="./images/Subtract.png" alt="Logo" class="w-10 h-10 rounded-full">
                             </div>
-                            <div class="flex-grow flex flex-col justify-center">
+                            <div class="flex-grow flex flex-col">
                                 <h3 class="text-xl font-playfair text-white">No hidden charges</h3>
-                                <p class="text-white font-montserrat">Complete our online form. It’s quick, easy, and
-                                    confidential.</p>
-                                <div class="flex justify-start mt-2">
-                                    <div class="border-t border-white w-1/2"></div>
-                                </div>
+                                <p class="text-white font-montserrat">Complete our online form. It’s quick, easy, and confidential.</p>
+                                <div class="border-t border-white w-1/2 mt-2"></div>
                             </div>
                         </li>
-
                     </ul>
+                    
                 </div>
             </div>
         </section>
@@ -272,7 +259,7 @@
                         We help to complete your financial desire<br />by a few steps of the form.
                     </p>
                 </div>
-        
+
                 <!-- Right Section -->
                 <div class="grid grid-cols-3 gap-4 w-1/2">
                     <div class="flex flex-col">
@@ -310,7 +297,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <!-- Bottom Section -->
             <div class="text-center">
                 <hr class="border-white mb-1 mt-10" />
@@ -331,7 +318,7 @@
                 </p>
             </div>
         </footer>
-        
+
     </div>
 
     <script src="script.js"></script>
